@@ -1,4 +1,5 @@
 # Stock Sentiment Word Cloud
+![Stockcloud](Images/stockcloud.jpg)
 Application that allows users to input a stock ticker and generate a word cloud of the sentinments around the stock. Generates a csv file for news headlines and PNG image for word cloud. 
 
 --- 
