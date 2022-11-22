@@ -1,5 +1,5 @@
 # Stock Sentiment Word Cloud
-Application that allows users to input a stock ticker and generate a word cloud of the sentinments around the stock. 
+Application that allows users to input a stock ticker and generate a word cloud of the sentinments around the stock. Generates a csv file for news headlines and PNG image for word cloud. 
 
 --- 
 
@@ -28,39 +28,42 @@ Before running the application, first install the following dependencies
   pip install tradingview_ta
   pip install --upgrade mplfinance
   pip install hvplot
-  
 ```
-
 And get API key from newsapi.org
-
----
-
-## Examples
-
-Upon running the inital code for yfinance data, you will asked to input a stock ticker for data.
-
-![Yfinance Data Prompt](Images/Yfinance_Data.PNG)
-
-Input in the following format 
-
-![Yfinance Data Prompt Complete](Images/Yfinance_Data2.PNG)
-
-
-
-The following code will display a candlestick chart with 8/13/21 EMA's, ADX, and Volume. Must run all code blocks beforehand for this to display properly.
-
-![Candlestick Created](Images/Candlestick_Display.PNG)
-
-
-
 
 ---
 
 ## Usage
 
-To use the Algo Trading Project application, clone the repository and run the **Backtest Trade Algorithm.ipynb** on Jupyter Lab. 
+To use the Stock Sentiment application, clone the repository and run the **Stock Sentiment Analyzer.ipynb** on Jupyter Lab. 
 
-Currently does not connect to brokerages, however the entry signals can be used to take trades manually.
+Run the import code blocks and type in stock ticker of your choice at the prompt for analysis.
+
+Includes Tradingview Recommendation block. Simply type in ticket you want in ' symbol="TICK" ' to get Tradingview's recommendations on the stock. 
+
+---
+
+## Examples
+
+Upon running the inital code for NewsAPI, you will asked to input a stock ticker for data (ex. TSLA, GOOG, META) 
+
+![Stock Input](Images/stockinput.PNG)
+---
+Get API key:
+
+![API Key](Images/apikey.PNG)
+---
+Sentiment Value Dataframe code:
+
+![Sentiment DF](Images/sentimentdf.PNG)
+---
+After running the rest of the code including the tokenized news data you will be able to generate the Word Cloud: 
+
+![WordCloud Input](Images/wordcloudinput.PNG)
+
+![WordCloud](Images/wordcloud.PNG)
+
+
 
 
 
