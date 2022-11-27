@@ -25,7 +25,6 @@ Before running the application, first install the following dependencies
 
 ```python
   pip install pandas
-  pip install yfinance
   pip install tradingview_ta
   pip install --upgrade mplfinance
   pip install hvplot
